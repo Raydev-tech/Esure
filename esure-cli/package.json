@@ -14,8 +14,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "dev": "tsx src/cli.ts",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "dev": "node init && tsx src/cli.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
